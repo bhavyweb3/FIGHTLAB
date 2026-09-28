@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FIGHTLAB - Boxing & MMA Training</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Header -->
+
+<header>
+
+    <div class="logo">
+        FIGHTLAB
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#legends">Legends</a>
+        <a href="#techniques">Techniques</a>
+        <a href="#videos">Videos</a>
+        <a href="#analysis">Analysis</a>
+        <a href="#quiz">Fight IQ</a>
+        <a href="#ai">Assistant</a>
+        <a href="dashboard.html">Dashboard</a>
+
+    </nav>
+
+</header>
+
+
+<!-- Home -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            BOXING & MMA TRAINING
+        </p>
+
+        <h1>
+            Train. Learn. Improve.
+        </h1>
+
+        <p>
+            FIGHTLAB is a simple training platform for
+            beginners interested in boxing and MMA.
+        </p>
+
+        <button onclick="document.getElementById('techniques').scrollIntoView({behavior:'smooth'})">
+            Start Training
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- Features -->
+
+<section class="features">
+
+    <h2>What You Can Do</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🥊
+            </div>
+
+            <h3>Learn Techniques</h3>
+
+            <p>
+                Learn basic boxing and MMA techniques
+                with simple explanations.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🎥
+            </div>
+
+            <h3>Watch Videos</h3>
+
+            <p>
+                Watch useful training videos and
+                improve your understanding.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🧠
+            </div>
+
+            <h3>Test Your Knowledge</h3>
+
+            <p>
+                Take the Fight IQ quiz and check
+                your basic fighting knowledge.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Fighting Legends -->
+
+<section id="legends">
+
+    <h2>Fighting Legends</h2>
+
+    <p class="section-intro">
+        Learn from some of the most recognized names in boxing and MMA.
+    </p>
+
+
+    <div class="legend-container">
+
+
+        <!-- Khabib -->
+
+        <div class="legend-card">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Khabib_nurmagomedov.jpg"
+                alt="Khabib Nurmagomedov"
+            >
+
+            <div class="legend-info">
+
+                <h3>Khabib Nurmagomedov</h3>
+
+                <p>
+                    MMA fighter known for wrestling,
+                    grappling and ground control.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mike Tyson -->
+
+        <div class="legend-card">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mike_Tyson_-_2005.jpg"
+                alt="Mike Tyson"
+            >
+
+            <div class="legend-info">
+
+                <h3>Mike Tyson</h3>
+
+                <p>
+                    Former heavyweight boxing champion
+                    known for powerful punching.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Muhammad Ali -->
+
+        <div class="legend-card">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ali.jpg"
+                alt="Muhammad Ali"
+            >
+
+            <div class="legend-info">
+
+                <h3>Muhammad Ali</h3>
+
+                <p>
+                    Boxing legend known for his speed,
+                    movement and boxing style.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- Techniques -->
+
+<section id="techniques">
+
+    <h2>Technique Library</h2>
+
+    <p class="section-intro">
+        Select a technique to learn more about it.
+    </p>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>🥊 Jab</h3>
+
+            <p>
+                Basic straight punch using the lead hand.
+            </p>
+
+            <button onclick="showTechnique('Jab')">
+                Learn
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🥊 Cross</h3>
+
+            <p>
+                Straight rear-hand punch used for power.
+            </p>
+
+            <button onclick="showTechnique('Cross')">
+                Learn
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🦵 Round Kick</h3>
+
+            <p>
+                Rotational kick used in MMA and kickboxing.
+            </p>
+
+            <button onclick="showTechnique('Round Kick')">
+                Learn
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>🤼 Takedown</h3>
+
+            <p>
+                Technique used to take an opponent
+                to the ground.
+            </p>
+
+            <button onclick="showTechnique('Takedown')">
+                Learn
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="result"></div>
+
+</section>
+
+
+<!-- Videos -->
+
+<section id="videos" class="dark-section">
+
+    <h2>Training Videos</h2>
+
+    <p class="section-intro">
+        Useful videos for learning basic boxing and MMA skills.
+    </p>
+
+
+    <div class="videos">
+
+        <div class="video-card">
+
+            <h3>Boxing Basics</h3>
+
+            <iframe
+                src="https://www.youtube.com/embed/kKDHdsVN0b8"
+                title="Boxing Basics"
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                Basic boxing movements and techniques
+                for beginners.
+            </p>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <h3>Boxing Training</h3>
+
+            <iframe
+                src="https://www.youtube.com/embed/vwFlBiZOG4k"
+                title="Boxing Training"
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                Beginner-friendly boxing training
+                and fundamentals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Fight Analysis -->
+
+<section id="analysis">
+
+    <h2>Fight Analysis</h2>
+
+    <p class="section-intro">
+        Record your observations about a fighter or technique.
+    </p>
+
+
+    <form id="analysisForm">
+
+        <input
+            type="text"
+            id="fighter"
+            placeholder="Fighter name"
+            required
+        >
+
+        <input
+            type="text"
+            id="technique"
+            placeholder="Technique observed"
+            required
+        >
+
+        <textarea
+            id="observation"
+            placeholder="Write your observation..."
+            required
+        ></textarea>
+
+        <button type="submit">
+            Save Analysis
+        </button>
+
+    </form>
+
+
+    <div id="analysisMessage"></div>
+
+</section>
+
+
+<!-- Fight IQ -->
+
+<section id="quiz" class="dark-section">
+
+    <h2>Fight IQ Quiz</h2>
+
+    <p class="section-intro">
+        Test your basic knowledge of boxing and MMA.
+    </p>
+
+
+    <form id="quizForm">
+
+
+        <div class="question">
+
+            <p>
+                <b>1. Which punch is usually thrown with the lead hand?</b>
+            </p>
+
+            <label>
+                <input type="radio" name="q1" value="correct">
+                Jab
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="wrong">
+                Cross
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <b>2. What is footwork important for?</b>
+            </p>
+
+            <label>
+                <input type="radio" name="q2" value="correct">
+                Movement and positioning
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="wrong">
+                Only attacking
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <b>3. What does a takedown do?</b>
+            </p>
+
+            <label>
+                <input type="radio" name="q3" value="correct">
+                Takes an opponent to the ground
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="wrong">
+                Ends every fight immediately
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <b>4. What is a guard mainly used for?</b>
+            </p>
+
+            <label>
+                <input type="radio" name="q4" value="correct">
+                Protection and defense
+            </label>
+
+            <label>
+                <input type="radio" name="q4" value="wrong">
+                Only attacking
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <p>
+                <b>5. What helps maintain balance while fighting?</b>
+            </p>
+
+            <label>
+                <input type="radio" name="q5" value="correct">
+                Proper footwork
+            </label>
+
+            <label>
+                <input type="radio" name="q5" value="wrong">
+                Closing your eyes
+            </label>
+
+        </div>
+
+
+        <button type="submit">
+            Submit Quiz
+        </button>
+
+    </form>
+
+
+    <div id="quizResult"></div>
+
+</section>
+
+
+<!-- Training Assistant -->
+
+<section id="ai">
+
+    <h2>Training Assistant</h2>
+
+    <p class="section-intro">
+        Ask a basic question about boxing, MMA or training.
+    </p>
+
+
+    <div class="ai-box">
+
+        <input
+            type="text"
+            id="aiQuestion"
+            placeholder="Example: How can I improve my jab?"
+        >
+
+        <button onclick="askAI()">
+            Ask
+        </button>
+
+        <div id="aiAnswer"></div>
+
+    </div>
+
+</section>
+
+
+<!-- About -->
+
+<section id="about" class="about">
+
+    <h2>About FIGHTLAB</h2>
+
+    <p>
+        FIGHTLAB is a college project developed to provide
+        beginners with a simple platform for learning basic
+        boxing and MMA techniques. The system also includes
+        training videos, fight analysis, a knowledge quiz
+        and a basic training assistant.
+    </p>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+        FIGHTLAB | Boxing & MMA Training
+    </p>
+
+    <p>
+        College Project © 2026
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

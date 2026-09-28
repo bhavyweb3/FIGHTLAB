@@ -1,0 +1,797 @@
+/* ==============================
+   FIGHTLAB - MAIN CSS
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+header {
+    background: #000;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #e00000;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+/* ==============================
+   HERO SECTION
+   ============================== */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.68),
+            rgba(0, 0, 0, 0.84)
+        ),
+        url("mma-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.small-title {
+    color: red;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+.hero p {
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.hero button {
+    margin-top: 15px;
+}
+
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+button {
+    background: red;
+    color: white;
+
+    border: none;
+    padding: 11px 20px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #b00000;
+}
+
+
+/* ==============================
+   GENERAL SECTIONS
+   ============================== */
+
+section {
+    padding: 65px 7%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.section-intro {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 35px;
+}
+
+
+/* ==============================
+   FEATURES
+   ============================== */
+
+.features {
+    background: #111;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #1c1c1c;
+    border: 1px solid #333;
+
+    padding: 25px;
+
+    border-radius: 7px;
+
+    width: 260px;
+
+    text-align: center;
+}
+
+.feature-card:hover {
+    border-color: red;
+    transform: translateY(-3px);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    color: red;
+}
+
+.feature-card p {
+    color: #bbb;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   FIGHTING LEGENDS
+   ============================== */
+
+#legends {
+    background: #151515;
+}
+
+.legend-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.legend-card {
+    width: 280px;
+
+    background: #1c1c1c;
+
+    border: 1px solid #333;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.legend-card:hover {
+    transform: translateY(-5px);
+    border-color: red;
+}
+
+.legend-card img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.legend-info {
+    padding: 18px;
+}
+
+.legend-info h3 {
+    color: red;
+    margin-top: 0;
+}
+
+.legend-info p {
+    color: #bbb;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   TECHNIQUE CARDS
+   ============================== */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1c1c1c;
+
+    border: 1px solid #333;
+
+    padding: 22px;
+
+    border-radius: 6px;
+
+    width: 250px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: red;
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    color: red;
+}
+
+.card p {
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.card button {
+    margin-top: 8px;
+}
+
+
+/* ==============================
+   TECHNIQUE RESULT
+   ============================== */
+
+#result {
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    background: #1c1c1c;
+
+    border-left: 4px solid red;
+
+    border-radius: 4px;
+}
+
+#result h3 {
+    color: red;
+}
+
+
+/* ==============================
+   DARK SECTIONS
+   ============================== */
+
+.dark-section {
+    background: #050505;
+}
+
+
+/* ==============================
+   VIDEOS
+   ============================== */
+
+.videos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 420px;
+
+    background: #1c1c1c;
+
+    border: 1px solid #333;
+
+    padding: 20px;
+
+    border-radius: 6px;
+}
+
+.video-card h3 {
+    color: red;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 220px;
+
+    border: none;
+
+    display: block;
+}
+
+.video-card p {
+    color: #bbb;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   FORMS
+   ============================== */
+
+#analysisForm,
+.ai-box {
+    max-width: 550px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    background: #222;
+
+    color: white;
+
+    border: 1px solid #444;
+
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: red;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#analysisForm button,
+.ai-box button {
+    margin-top: 10px;
+}
+
+#analysisMessage {
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+
+/* ==============================
+   QUIZ
+   ============================== */
+
+.question {
+    max-width: 650px;
+
+    margin: 15px auto;
+
+    padding: 18px;
+
+    background: #1c1c1c;
+
+    border: 1px solid #333;
+
+    border-radius: 5px;
+}
+
+.question:hover {
+    border-color: #555;
+}
+
+.question p {
+    color: white;
+}
+
+.question label {
+    display: block;
+
+    margin: 10px 0;
+
+    color: #ccc;
+
+    cursor: pointer;
+}
+
+.question input {
+    width: auto;
+    margin-right: 8px;
+}
+
+#quizForm button {
+    display: block;
+
+    margin: 25px auto;
+}
+
+#quizResult {
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    padding: 18px;
+
+    background: #1c1c1c;
+
+    border-left: 4px solid red;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* ==============================
+   TRAINING ASSISTANT
+   ============================== */
+
+#ai {
+    background: #111;
+}
+
+.ai-box {
+    background: #1c1c1c;
+
+    padding: 25px;
+
+    border: 1px solid #333;
+
+    border-radius: 6px;
+}
+
+.ai-box button {
+    width: 100%;
+}
+
+#aiAnswer {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    background: #111;
+
+    border-left: 4px solid red;
+
+    color: #ddd;
+
+    line-height: 1.6;
+
+    min-height: 30px;
+}
+
+
+/* ==============================
+   DASHBOARD
+   ============================== */
+
+.dashboard-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("mma-bg.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    min-height: 700px;
+
+    background-attachment: fixed;
+}
+
+.dashboard-cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+}
+
+.dashboard-card {
+    background: rgba(20, 20, 20, 0.92);
+
+    border: 1px solid #333;
+
+    padding: 25px;
+
+    border-radius: 7px;
+
+    width: 280px;
+
+    min-height: 200px;
+
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    border-color: red;
+
+    transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+    color: red;
+}
+
+.dashboard-card p {
+    color: #bbb;
+
+    line-height: 1.6;
+
+    min-height: 55px;
+}
+
+
+/* ==============================
+   LOGIN / SIGNUP
+   ============================== */
+
+.auth {
+    max-width: 400px;
+
+    margin: 80px auto;
+
+    padding: 35px;
+
+    background: #1c1c1c;
+
+    border: 1px solid #333;
+
+    border-radius: 7px;
+
+    text-align: center;
+}
+
+.auth h2 {
+    color: red;
+
+    margin-bottom: 25px;
+}
+
+.auth button {
+    width: 100%;
+
+    margin-top: 10px;
+}
+
+.auth p {
+    color: #aaa;
+
+    margin-top: 20px;
+}
+
+.auth a {
+    color: red;
+
+    text-decoration: none;
+}
+
+.auth a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   ABOUT
+   ============================== */
+
+.about {
+    background: #000;
+
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #bbb;
+
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    background: #000;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #888;
+
+    border-top: 1px solid #222;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+
+/* ==============================
+   SAVED ANALYSIS
+   ============================== */
+
+.analysis {
+    background: #222;
+
+    padding: 20px;
+
+    margin: 20px auto;
+
+    max-width: 600px;
+
+    border-left: 4px solid red;
+
+    border-radius: 4px;
+}
+
+.analysis h3 {
+    color: red;
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+   ============================== */
+
+@media (max-width: 700px) {
+
+    header {
+        display: block;
+
+        text-align: center;
+
+        padding: 15px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px 7px;
+
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 500px;
+
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .feature-card,
+    .card,
+    .dashboard-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .legend-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .legend-card img {
+        height: 350px;
+    }
+
+    .video-card {
+        width: 100%;
+    }
+
+    .video-card iframe {
+        height: 210px;
+    }
+
+    .auth {
+        margin: 50px 20px;
+    }
+}
