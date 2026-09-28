@@ -44,17 +44,16 @@ FIGHTLAB is a simple full-stack web application designed for boxing and MMA enth
 ## Screenshots
 
 ### Learning Page
-![FIGHTLAB Learning](<img width="1805" height="840" alt="Learning Videos FIGHTLAB" src="https://github.com/user-attachments/assets/7273539e-c89f-4907-aeb2-1db1f0becb73" />
-)
+<img width="1805" height="840" alt="Learning Videos FIGHTLAB" src="https://github.com/user-attachments/assets/3e38fffc-8ee3-473b-ba6d-bf2d7295cbc7" />
 
 
 ### Dashboard
-![FIGHTLAB Dashboard](<img width="1801" height="835" alt="Dashboard FIGHTLAB" src="https://github.com/user-attachments/assets/a4ba1d3c-d902-45dc-b371-a36808bae051" />
-)
+<img width="1801" height="835" alt="Dashboard FIGHTLAB" src="https://github.com/user-attachments/assets/41f620cb-b912-47cc-8bbc-50e89bace855" />
 
-### Fight Analysis
-![FIGHTLAB AI Analysis](<img width="1811" height="887" alt="AI FIGHTLAB" src="https://github.com/user-attachments/assets/23697412-eb21-47d9-a125-6f89d51b78d3" />
-)
+### Fight AI Analysis
+<img width="1811" height="887" alt="AI FIGHTLAB" src="https://github.com/user-attachments/assets/cd882b62-3107-45f8-8692-2b79e3ebda7e" />
+
+
 ## 📂 Project Structure
 
 ```text
